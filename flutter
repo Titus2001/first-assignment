@@ -1,0 +1,66 @@
+void main() {
+  List<int> a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89];
+
+  List<int> elementsLessThanFive = a.where((element) => element < 5).toList();
+
+  print("Elements Less Than 5: $elementsLessThanFive");
+}
+
+
+void main() {
+List<int> a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89];
+  List<int> b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+  List<int> commonElements = a.where((element) => b.contains(element)).toSet().toList()
+}
+  print("Common Elements: $commonElements");
+}
+
+
+Void main() {
+String inputString = "dard"; 
+
+  bool isPalindrome = checkPalindrome(inputString);
+
+  if (isPalindrome) {
+    print("The string '$inputString' is a palindrome.");
+  } else {
+    print("The string '$inputString' is not a palindrome.");
+  }
+}
+
+bool checkPalindrome(String str) {
+  String reversedString = str.split('').reversed.join('');
+  return str == reversedString;
+}
+
+
+
+Void main( ){
+  List<int> a = [5, 10, 15, 20, 25];
+
+  List<int> firstAndLastElements = [a.first, a.last];
+
+  print("Original List: $a");
+  print("New List with First and Last Elements: $firstAndLastElements");
+}
+
+
+
+void main() {
+ var str = "for you";
+ var codes= str.runes.toList().reversed;
+ final output=String.fromChartcodes();
+ print(output);
+}
+
+
+
+void main() {
+  final demo = ['a','b','a','c','f','c','d','b','e'];
+  
+  var demo2 = demo.toSet().toList();
+  print(demo2);
+
+}
+
+
